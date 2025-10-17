@@ -4,7 +4,7 @@
 //@version=6
 // -----------------------------------------------------------------------------
 //  KDJ Indicator Plus
-//  v1.1.2
+//  v1.1.3
 // -----------------------------------------------------------------------------
 indicator("KDJ Indicator Plus", shorttitle="KDJ", overlay=false)
 
@@ -27,9 +27,9 @@ J = 3.0 * K - 2.0 * D
 bgcolor(J > D ? color.new(color.green, 92) : color.new(color.red, 100))
 
 // Guides
-hline(80, "Upper",  color=color.new(color.aqua, 60), linestyle=hline.style_dashed)
-hline(50, "Middle", color=color.new(color.aqua, 60), linestyle=hline.style_dashed)
-hline(20, "Lower",  color=color.new(color.aqua, 60), linestyle=hline.style_dashed)
+hline(80, "Upper",  color=color.new(color.aqua, 30), linestyle=hline.style_dashed)
+hline(50, "Middle", color=color.new(color.aqua, 30), linestyle=hline.style_dashed)
+hline(20, "Lower",  color=color.new(color.aqua, 30), linestyle=hline.style_dashed)
 
 // Plotting
 plot(K, "K", color=color.new(color.orange, 30), linewidth=1)
